@@ -14,3 +14,6 @@ Python was the language choice for this project. As recommended in the project d
 - image.transpose(Image.FLIP_TOP_BOTTOM
 
 My main function (‘rmsdiff’) simply converts two images into grayscale, then calls on ImageChops.difference(). This will return the absolute value of the pixel-by-pixel difference between 2 images. Additionally, the function simply calculates the root-mean-square difference between Figure A to B or C. For further checks, this function can compare B and C to 6 different choices by iterating through an array ‘choice_arr’. I used Image.open(figx.VisualFilename) to store all the figures under variable names. To sum up, my agent for solving 2X2 matrices utilizes both concepts of production rules, semantic networks and generate/test. 
+
+## Analysis & Findings
+The overall process of designing my agent came from grouping similar problems together. I studied 12 Basic-Problem Datasets, recording semantic relationships between A, B and C then brainstormed what transformations the agent must perform to return the correct answer. In terms of how similar I feel that this agent is near  human intelligence, I’d say 9/12 seems to be an average human score if all the problems are expected to be done within 2-5 minutes. In the future, I will start implementing the verbal approach to generate a higher accuracy.
